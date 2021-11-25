@@ -1,0 +1,11 @@
+<mat-toolbar >
+  <div class="header-wrapper">
+    <figure class="logo_wrap mini">
+      <img src="../../../assets/images/logo_glamping.png" alt="dream-glamping" class="img-fluid">
+    </figure>  
+    <nav class="navbar">
+      <a *ngFor="let item of items" [routerLink]="item.url" routerLinkActive="active">{{item.nombre | titlecase}}</a>
+    </nav>
+  </div>
+</mat-toolbar>
+

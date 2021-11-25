@@ -1,0 +1,19 @@
+
+<mat-divider></mat-divider>
+<br>
+
+<div *ngIf="reservas" class="bloques" >
+    <div class="example-button-container">
+        <button id="crearOrden" routerLink="/reserva/crear"  mat-fab color="warn">
+          <mat-icon>add</mat-icon>
+        </button>
+    </div>
+
+    <div 
+         *ngFor="let reserva of listaReservas | async">
+       
+        <app-tarjeta-reserva [reserva]="reserva" (eliminar)="eliminarReserva($event)"></app-tarjeta-reserva>
+    </div>
+  
+</div>
+

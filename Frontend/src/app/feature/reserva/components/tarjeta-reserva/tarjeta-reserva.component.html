@@ -1,0 +1,45 @@
+<mat-card>
+
+    <mat-list >
+        <div class="fila">
+            <mat-icon>bookmark</mat-icon>
+            <h2 id="reservaId">Reserva: {{ reserva.id }}</h2>
+        </div>
+  
+        <mat-list-item></mat-list-item>
+  
+    
+        <mat-divider></mat-divider>
+  
+        <mat-list-item>
+            <mat-icon>perm_identity</mat-icon>
+            <h3 id="cedula"> {{ reserva.cedula }} - {{reserva.nombre}}</h3>
+        </mat-list-item>
+  
+        <mat-list-item>
+            <mat-icon>date_range</mat-icon>
+            <h3 id="fechas">Desde: {{ reserva.fechaEntrada}} hasta: {{ reserva.fechaSalida }}  </h3>
+        </mat-list-item>
+  
+        <mat-list-item>
+          <mat-icon>room</mat-icon>
+          <h3 id="idGlamping" >Glamping #{{reserva.idGlamping}}</h3>
+        </mat-list-item>
+  
+        <mat-list-item>
+          <mat-icon>contact_phone</mat-icon>
+          <h3 id="telefono">{{ reserva.telefono }}</h3>
+        </mat-list-item>
+  
+        <mat-list-item>
+          <mat-icon>attach_money</mat-icon>
+          <h3 id="costoTotal">{{ reserva.costoTotal | currency}}</h3>
+        </mat-list-item>
+  
+        <mat-divider></mat-divider>
+  
+        <mat-list-item>
+            <button id="botonEliminarReserva" (click)="eliminarReserva()" class="width-100" color="warn" mat-raised-button>Eliminar</button>
+        </mat-list-item>
+    </mat-list>
+  </mat-card>

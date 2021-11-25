@@ -1,0 +1,146 @@
+html {
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+body {
+	font-family: "Roboto";
+	margin: 0;
+	overflow-x: hidden;
+	padding: 0;
+	width: 100%;
+    /* background-color: #372554; */
+    background-image: url('./images/fondo2.jpg');
+    background-size: cover;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+	padding: 0;
+}
+
+.navbar{
+    margin-bottom: 1rem !important;
+}
+
+.banner{
+    position: relative;
+    /* height: 90%;
+    background-image: url('./images/glamping_banner.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    display: flex;
+    justify-content: center;
+}
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+.wrapper-navigation{
+    /* position: absolute;
+    width: 100%; */
+}
+
+.logo_wrap{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    border-radius: 100px;
+    backdrop-filter: blur(7px) saturate(102%);
+    -webkit-backdrop-filter: blur(7px) saturate(102%);
+    background-color: rgba(255, 255, 255, 0.17);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.absolute-fixed{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.site_title{
+    margin-top: .5rem !important;
+    text-align: center;
+    color: #FBAF16;
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    letter-spacing: .5rem !important;
+    /* font-family: 'Pacifico', cursive !important; */
+    font-family: 'Roboto' !important;
+    font-style: italic !important;;
+
+}
+.site_title span{
+    color: #359C87;
+}
+.wrapper-logo_home{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.img-opacity{
+    opacity: .7;
+}
+
+.logo_wrap.mini{
+    width: 60px;
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding-block: 1rem;
+}
+
+.navbar a{
+    padding-inline: .5rem !important;
+    text-decoration: none;
+    font-family: 'Roboto' !important;
+    color: #359C87 !important; 
+    transition: all .3s ease-in-out;
+
+}
+
+.navbar a.active{
+    color: #FBAF16 !important; 
+
+}
+
+.navbar{
+    margin-bottom: 0 !important;
+}
+
+.navbar a:hover{
+    color: #FBAF16 !important; 
+
+}
+
+.mat-toolbar{
+    background-color: transparent !important;
+    /* opacity: 0.8; */
+}
+
+.mat-toolbar-single-row{
+    height: auto !important;
+}
+

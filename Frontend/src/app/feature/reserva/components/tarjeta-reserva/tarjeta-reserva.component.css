@@ -1,0 +1,30 @@
+mat-card {
+    min-width: 250px;
+    max-width: 400px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    opacity: 0.8;
+  
+  }
+  
+  .fila {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  
+  h2, h3 {
+    margin: auto;
+  }
+
+  h3{
+    color: black;
+  }
+  
+  
+  .width-100 {
+    width: 100%;
+  }
+

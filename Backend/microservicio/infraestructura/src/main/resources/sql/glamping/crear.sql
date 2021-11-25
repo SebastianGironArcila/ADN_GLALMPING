@@ -1,0 +1,1 @@
+insert into glamping (idTipoGlamping, descripcion, precio, estado) values (:idTipoGlamping, :descripcion, :precio, :estado)

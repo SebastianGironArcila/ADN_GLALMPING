@@ -1,0 +1,2 @@
+select id,idGlamping,cedula,nombre,fechaEntrada,fechaSalida,cantPersonas,telefono,costoTotal,fechaRegistro
+from reserva
